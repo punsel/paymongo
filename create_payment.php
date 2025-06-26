@@ -1,6 +1,7 @@
 <?php
-
+require __DIR__ . '/vendor/autoload.php';
 require 'db.php'; // Include the database connection file
+
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__, 'api.env');
 $dotenv->load();
 // --- Paste your PayMongo test secret key here ---
